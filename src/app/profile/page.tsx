@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
 import { BiLoaderCircle } from "react-icons/bi";
 import dayjs from 'dayjs'
 import { AlertDialogDemo } from "@/components/AlertBox";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -109,7 +110,7 @@ export default function Page() {
                     )}
                   >
                     <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 flex">
-                      <AlertDialogDemo classes="bg-white text-black hover:bg-slate-600 hover:text-white" buttonText="Download" callBackFunct={downloadPost} id={post.url} confirmBtnClass="hover:bg-slate-500 hover:text-white" />
+                      <Button className="bg-white text-black hover:bg-slate-600 hover:text-white" onClick={() => downloadPost(post.url)} >Download</Button>
                       <AlertDialogDemo classes="ml-8 bg-white text-black hover:bg-red-600 hover:text-white" buttonText="Delete" callBackFunct={deletePost} id={post.id} confirmBtnClass="hover:bg-red-500 hover:text-white" />
                     </div>
                   </div>
