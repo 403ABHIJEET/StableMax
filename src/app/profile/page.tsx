@@ -8,7 +8,6 @@ import React, { useEffect, useState } from "react";
 import { BiLoaderCircle } from "react-icons/bi";
 import dayjs from 'dayjs'
 import { AlertDialogDemo } from "@/components/AlertBox";
-import prisma from "@/utils/prisma";
 
 export default function Page() {
   const [loading, setLoading] = useState<boolean>(true);
