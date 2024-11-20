@@ -1,5 +1,4 @@
 "use client";
-
 import { cn } from "@/lib/utils";
 import { Post } from "@prisma/client";
 import { AnimatePresence, motion } from "framer-motion";

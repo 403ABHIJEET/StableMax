@@ -30,7 +30,7 @@ export default function Header() {
         </div>
       ) : (
         <div className="flex gap-3 justify-center items-center">
-          <Button onClick={() => signOut({callbackUrl: "/"})} variant="destructive">
+          <Button onClick={() => signOut()} variant="destructive">
             Logout
           </Button>
           <Link href="/profile">
