@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative max-w-7xl mx-auto`}
+        className={`${geistMono.variable} ${geistSans.variable} antialiased relative`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Provider>
@@ -53,3 +53,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+// 
