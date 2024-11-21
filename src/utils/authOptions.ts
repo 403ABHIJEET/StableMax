@@ -23,5 +23,15 @@ export const authOptions: NextAuthOptions = {
       }
       return session;
     },
+    async jwt({ token, session }) {
+      if (session) {
+        token.user = session.user
+      }
+      return token;
+    },
   },
+  session: {
+    strategy: 'jwt',
+  },
+  secret: process.env.NEXTAUTH_SECRET,
 };
