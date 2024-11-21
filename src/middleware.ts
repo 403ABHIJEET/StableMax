@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
 export { default } from "next-auth/middleware"
-import { authOptions } from './utils/authOptions'
-import { getServerSession } from 'next-auth'
 import { getToken } from 'next-auth/jwt';
 
 
