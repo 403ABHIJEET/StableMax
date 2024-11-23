@@ -38,7 +38,7 @@ interface props {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel onClick={handleAction} >Cancel</AlertDialogCancel>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
             <AlertDialogAction onClick={handleAction} className={confirmBtnClass} >Confirm</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
